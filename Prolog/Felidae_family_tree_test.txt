@@ -1,0 +1,59 @@
+% 1. Kể tên các chi thuộc họ Mèo(Felidae).
+genera(X).
+
+% 2. Kể tên các loài thuộc chi Mèo(Felis)
+felidae_in_genera(X,felis_genera).
+
+% 3. Loài Hổ(Tiger) có thuộc chi Báo sư tử(Puma) hay không
+felidae_in_genera(tiger,puma_genera).
+
+% 4. Chi Báo săn(acinonyx) có thuộc dòng dõi Puma hay không.
+genera_in_lineage(acinonyx_genera,puma_lineage).
+
+% 5. Nơi sinh sống của loài Báo mây Sunda
+continent_range(sunda_clouded_leopard,X).
+
+% 6. Tình trạng của loài Mèo cây Châu Mỹ có phải là LC hay không.
+endangered_status(jaguarundi,lc).
+
+% 7. Kể tên các loài có kích thước cơ thể trung bình.
+felidae_size(X,medium).
+
+% 8. Loài Mèo núi Trung Hoa có chung phân họ với loài Báo săn hay không.
+felidae_same_subfamily(chinese_mountain_cat,cheetah).
+
+% 9. Loài Sư tử trong phân họ nào.
+felidae_in_subfamily(lion,X).
+
+% 10. Kể tên các loài trong tình trạng bị đe dọa.
+felidae_threatened(X).
+
+% 11. Kể tên các loài sống ở châu Á và có kích thước nhỏ.
+felidae_have_continent_size(X,asia,small).
+
+% 12. Những chi nào thuộc cùng dòng dõi với chi Caracal.
+genera_same_lineage(caracal_genera,X). 
+
+% 13. Chi Panthera có kích thước nhỏ hay không.
+genera_have_size(panthera_genera,small).
+
+% 14. Kể tên những dòng dõi chung phân họ với dòng dõi Caracal.
+lineage_same_subfamily(caracal_lineage,X).
+
+% 15. Phân họ Felinae thì có phân bố ở châu Á hay không.
+subfamily_in_continent(felinae,asia).
+
+% 16. Phân họ nào có loài thuộc tình trạng VU và có kích thước trung bình.
+subfamily_have_status_size(X,vu,medium).
+
+% 17. Kể tên các loài có ở Châu Phi.
+continent_have_genera(africa,X).
+
+% 18. Châu Âu có tồn tại loài nào đã tuyệt chủng hay không.
+continent_have_extinct(europe).
+
+% 19. Những loài ở châu Phi có tình trạng như thế nào.
+status_in_continent(X,africa).
+
+% 20. Những loài có kích thước lớn thì có loài nào có thể nằm trong tình trạng LC hay không.
+size_have_status(big,lc).
