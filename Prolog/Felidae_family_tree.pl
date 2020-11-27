@@ -157,19 +157,13 @@ felidae_in_genera(european_wildcat,felis_genera).
 %--In subfamily
 lineage_in_subfamily(panthera_lineage, pantherinae).
 
-lineage_in_subfamily(panthera_genera,felinae).
-lineage_in_subfamily(pardofelis_genera,felinae).
-lineage_in_subfamily(catopuma_genera,felinae).
-lineage_in_subfamily(leptailurus_genera,felinae).
-lineage_in_subfamily(caracal_genera,felinae).
-lineage_in_subfamily(leopardus_genera,felinae).
-lineage_in_subfamily(lynx_genera,felinae).
-lineage_in_subfamily(puma_genera,felinae).
-lineage_in_subfamily(acinonyx_genera,felinae).
-lineage_in_subfamily(herpailurus_genera,felinae).
-lineage_in_subfamily(prionailurus_genera,felinae).
-lineage_in_subfamily(otocolobus_genera,felinae).
-lineage_in_subfamily(felis_genera,felinae).
+lineage_in_subfamily(bay_cat_lineage, felinae).
+lineage_in_subfamily(caracal_lineage, felinae).
+lineage_in_subfamily(leopardus_lineage, felinae).
+lineage_in_subfamily(lynx_lineage, felinae).
+lineage_in_subfamily(puma_lineage, felinae).
+lineage_in_subfamily(leopard_cat_lineage, felinae).
+lineage_in_subfamily(felis_lineage, felinae).
 
 %--In Lineage--
 genera_in_lineage(neofelis_genera,panthera_lineage).
