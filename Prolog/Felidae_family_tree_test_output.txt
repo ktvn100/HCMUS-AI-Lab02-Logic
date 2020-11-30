@@ -1,0 +1,201 @@
+% 1. Kể tên các chi thuộc họ Mèo(Felidae).
+genera(X).
+
+X = neofelis_genera ;
+X = panthera_genera ;
+X = pardofelis_genera ;
+X = catopuma_genera ;
+X = leptailurus_genera ;
+X = caracal_genera ;
+X = leopardus_genera ;
+X = lynx_genera ;
+X = puma_genera ;
+X = acinonyx_genera ;
+X = herpailurus_genera ;
+X = prionailurus_genera ;
+X = otocolobus_genera ;
+X = felis_genera.
+
+% 2. Kể tên các loài thuộc chi Mèo(Felis)
+felidae_in_genera(X,felis_genera).
+
+X = jungle_cat ;
+X = black_footed_cat ;
+X = sand_cat ;
+X = chinese_mountain_cat ;
+X = african_wildcat ;
+X = european_wildcat.
+
+% 3. Loài Hổ(Tiger) có thuộc chi Báo sư tử(Puma) hay không
+felidae_in_genera(tiger,puma_genera).
+
+false.
+
+% 4. Chi Báo săn(acinonyx) có thuộc dòng dõi Puma hay không.
+genera_in_lineage(acinonyx_genera,puma_lineage).
+
+true.
+
+% 5. Nơi sinh sống của loài Báo mây Sunda
+continent_range(sunda_clouded_leopard,X).
+
+X = asia.
+
+% 6. Tình trạng của loài Mèo cây Châu Mỹ có phải là LC hay không.
+endangered_status(jaguarundi,lc).
+
+true.
+
+% 7. Kể tên các loài có kích thước cơ thể trung bình.
+felidae_size(X,medium).
+
+X = asia_golden_cat ;
+X = serval ;
+X = caracal ;
+X = african_golden_cat ;
+X = ocelot ;
+X = bobcat ;
+X = canada_lynx ;
+X = eurasian_lynx ;
+X = iberian_lynx ;
+X = jaguarundi ;
+X = fishing_cat ;
+X = jungle_cat.
+
+% 8. Loài Mèo núi Trung Hoa có chung phân họ với loài Báo săn hay không.
+felidae_same_subfamily(chinese_mountain_cat,cheetah).
+
+false.
+
+% 9. Loài Sư tử trong phân họ nào.
+felidae_in_subfamily(lion,X).
+
+X = pantherinae.
+
+% 10. Kể tên các loài trong tình trạng bị đe dọa.
+felidae_threatened(X).
+
+X = clouded_leopard ;
+X = sunda_clouded_leopard ;
+X = leopard ;
+X = tiger ;
+X = snow_leopard ;
+X = lion ;
+X = bay_cat ;
+X = african_golden_cat ;
+X = andean_mountain_cat ;
+X = kodkod ;
+X = oncilla ;
+X = southern_tigrina ;
+X = iberian_lynx ;
+X = cheetah ;
+X = fishing_cat ;
+X = flat_headed_cat ;
+X = black_footed_cat ;
+X = chinese_mountain_cat ;
+false.
+
+% 11. Kể tên các loài sống ở châu Á và có kích thước nhỏ.
+felidae_have_continent_size(X,asia,small).
+
+X = marbled_cat ;
+X = bay_cat ;
+X = andean_mountain_cat ;
+X = pallas_s_cat ;
+X = rusty_spotted_cat ;
+X = leopard_cat ;
+X = flat_headed_cat ;
+X = sunda_leopard_cat ;
+X = sand_cat ;
+X = chinese_mountain_cat ;
+X = african_wildcat.
+
+% 12. Những chi nào thuộc cùng dòng dõi với chi Caracal.
+genera_same_lineage(caracal_genera,X). 
+
+X = pardofelis_genera ;
+X = catopuma_genera ;
+X = leptailurus_genera ;
+X = caracal_genera.
+
+% 13. Chi Panthera có kích thước nhỏ hay không.
+genera_have_size(panthera_genera,small).
+
+false.
+
+% 14. Kể tên những dòng dõi chung phân họ với dòng dõi Caracal.
+lineage_same_subfamily(caracal_lineage,X).
+
+X = bay_cat_lineage ;
+X = caracal_lineage ;
+X = leopardus_lineage ;
+X = lynx_lineage ;
+X = puma_lineage ;
+X = leopard_cat_lineage ;
+X = felis_lineage.
+
+% 15. Phân họ Felinae thì có phân bố ở châu Á hay không.
+subfamily_in_continent(felinae,asia).
+
+true ;
+true ;
+true ;
+true ;
+true ;
+true ;
+true ;
+true ;
+true ;
+true ;
+true ;
+true ;
+true ;
+true ;
+true ;
+false.
+
+% 16. Phân họ nào có loài thuộc tình trạng VU và có kích thước trung bình.
+subfamily_have_status_size(X,vu,medium).
+
+X = felinae ;
+X = felinae ;
+false.
+
+% 17. Kể tên các loài có ở Châu Phi.
+continent_have_genera(africa,X).
+
+X = panthera_genera ;
+X = panthera_genera ;
+X = leptailurus_genera ;
+X = caracal_genera ;
+X = caracal_genera ;
+X = acinonyx_genera ;
+X = felis_genera ;
+X = felis_genera ;
+X = felis_genera ;
+X = felis_genera.
+
+% 18. Châu Âu có tồn tại loài nào đã tuyệt chủng hay không.
+continent_have_extinct(europe).
+
+false.
+
+% 19. Những loài ở châu Phi có tình trạng như thế nào.
+status_in_continent(X,africa).
+
+X = vu ;
+X = vu ;
+X = lc ;
+X = lc ;
+X = vu ;
+X = vu ;
+X = lc ;
+X = vu ;
+X = lc ;
+X = ne ;
+false.
+
+% 20. Những loài có kích thước lớn thì có loài nào có thể nằm trong tình trạng LC hay không.
+size_have_status(big,lc).
+
+true.
